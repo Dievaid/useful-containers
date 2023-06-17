@@ -1,0 +1,18 @@
+version: "3"
+
+services:
+  minecraft:
+    image: itzg/minecraft-server
+    volumes:
+      - ./world:/data/world
+    ports:
+      - 53358:25565
+    environment:
+      EULA: "TRUE"
+      OPS: "ButterNPants"
+      ENABLE_WHITELIST: "TRUE"
+      ENFORCE_WHITELIST: "TRUE"
+      VERSION: "1.19.4"
+    tty: true
+    stdin_open: true
+    restart: unless-stopped

@@ -1,0 +1,7 @@
+services:
+  mysql-container:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 33057:3306
