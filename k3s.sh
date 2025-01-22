@@ -1,0 +1,1 @@
+curl -sfL https://get.k3s.io/ | K3S_TOKEN=K10afec04360b86c4a07fc3489579381b40999498d425e83c56282892b83e52d060::server:3605961ea46babc2bd8dcaf65fbcaf10 K3S_URL=https://frontier.go.ro:6443/ sh -s - agent
